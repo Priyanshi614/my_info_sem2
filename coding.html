@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(50, 102, 50);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #36e77a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(169, 140, 223);
+}
+
+.button:hover {background-color: #1280e7}
+
+.button:active {
+  background-color: #3b022a;
+  box-shadow: 0 5px rgb(230, 92, 92);
+  transform: translateY(4px);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    
+        
+.topnav {
+              overflow: hidden;
+              background-color: rgb(16, 17, 16);
+              position: fixed;
+            width: 100%;
+        }
+            
+.topnav a {
+              float: left;
+              color: #0b69a8;
+              text-align: center;
+              padding: 20px 20px;
+              text-decoration: none;
+              font-size: 20px;
+            }
+            
+        .topnav a:hover {
+            background-color: rgb(58, 29, 56);
+            
+              color: rgb(211, 89, 156);
+        }
+            
+        .topnav a.active {
+              background-color: #8648d6;
+              background-color: #e093ce;
+        }
+        <!--
+        body {
+ background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+        }
+      -->
+body { 
+  background: url('bgimg4.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container{
+padding: 25px;   
+}    
+    </style>
+</head>
+<body>
+    <div class="topnav" opacity : 1>
+                
+
+        <a href="index.html">About</a>
+        <a class="active" href="#home">Coding Skills</a>
+        
+        <a href="hobbies.html">Hobbies</a>
+        <a href="achivement.html">Achivements</a>
+        <a href="contact.html">Contact</a>
+        <a href="chat.html">Chat Area</a>
+        <a href="rating.php">Rating</a>
+       
+
+</div>
+
+<br>
+<br>
+<br>
+
+    <h1 style="color: coral;"> <span style='font-size:90px;'>&#128187;</span>
+        Coding Skills</h1>
+    <hr width="1350px" length = "20px">
+    <ul>
+        <li style="font-size: 20px;">
+            <h2>Programming Language</h2>
+            <i class="bi bi-file-earmark-code-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"/>
+              </svg>
+
+            Priyanshi is generally familier with <b> C </b>  ,<b>C++</b> and <b>JAVA</b> as programming language.</br></br>
+            <button  class = "button"  onclick="window.location.href='c_program/'"><span>C_Program</span></button></br> </br> 
+
+            <button  class = "button"    onclick="window.location.href='cpp_program/'"><span>Cpp_Program</span></button></br></br>
+            <button  class = "button"   onclick="window.location.href='java_program/'"><span>Java_Program</span></button></br></br>
+           
+        </li>
+        <li style="font-size: 20px;">
+
+            <h2>Web-Devlopment</h2>
+            <i class="bi bi-file-earmark-code-fill"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"/>
+              </svg>
+              She also know some basic idea about <b>HTML , CSS</b>  as well as <b>javascript</b>  and <b>php</b>  for making website.</br></br>
+
+              
+              
+              <button  class = "button"   onclick="window.location.href='html_program/'"><span>HTML&CSS_program</span></button></br></br>
+              <button  class = "button"  onclick="window.location.href='javascript_program/'"><span>Javascript_program</span></button></br><br>
+              <button class = "button"  onclick="window.location.href='php_program/'"><span>Php_program</span></button>
+         
+        </li>
+    </ul>
+    
+</body>
+</html>

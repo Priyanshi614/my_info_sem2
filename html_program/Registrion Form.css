@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+html { 
+    background: url('img/bg.jpg') no-repeat center center fixed; 
+    background-size:cover; 
+    background-attachment:fixed;
+    font-size: 62.5%;
+}
+
+.containner {
+    width: 70rem;
+    text-align: left;
+    border: red solid;
+    margin: auto;
+    background-color: rgba(255, 255, 240, 0.568);
+    border-radius: 2rem;
+    height: 69rem;
+}
+
+.main-heading
+{
+    font-size: 5rem;
+    text-align: left;
+    font-family: 'Berkshire Swash', cursive;
+    border-bottom: ivory solid;
+    text-align: center;
+
+}
+
+input[type="text"] {
+    width: 35rem;
+    height: 2.8rem;
+    border-radius: 1.3rem;
+    padding: 1.3rem;
+    font-size: 1.6rem;
+    background-color: red;
+    margin-top: 1rem;
+    float: right;
+    margin-right: 2rem;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    font-size: 2rem;
+    position: relative;
+    top: 4.1rem;
+    left: 8rem;
+    border: 0.2rem solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #6cd01a;
+    border: black solid 1.9px;
+    border: black solid 0.19rem;
+    margin-top: 1rem;
+    top: 17.1rem;
+
+}
+
+#Age,.std {
+    width: 29rem;
+    height: 2.8rem;
+    border-radius: 1.3rem;
+    font-size: 1.6rem;
+    background-color: red;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1.3rem;
+}
+
+option{
+    padding-left: 20rem;
+}
+
+label {
+    color: blue;
+    font-size: 2rem;
+    margin: 1.3rem;
+    margin-left: 3.5rem;
+    display: inline-block;
+}
+
+
+#Pnumber,#Snumber{
+    width: 29rem;
+}
+
+input[type="file"] {
+    width: 29rem;
+    height: 2.8rem;
+    font-size: 1.6rem;
+    background-color: red;
+    float: right;
+    margin-right: 5rem;
+    margin-top: 1.3rem;
+}
+
+#file_text{
+    border: 0.2rem solid black;
+    position: absolute;
+    bottom: 8rem;
+    left: 0rem;
+}
+
+textarea{
+    border-radius: 1.3rem;
+    font-size: 1.6rem;
+    background-color: wheat;
+    float: right;
+    width: 33rem;
+    margin-right: 2rem;
+}
+
+#Info1 {
+    border: solid black 0.2rem;
+    position: relative;
+    right: 32.3rem;
+    top: 9rem;
+}
+.info{
+    position: relative;
+    left: 35rem;
+}

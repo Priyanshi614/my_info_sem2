@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 28px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.image {
+    position: relative;
+    width: 400px;
+
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #1f0888;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 0.5;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+    a:link {
+        color: red;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: rgb(50, 102, 50);
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+      
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+          
+              
+              .topnav {
+                    overflow: hidden;
+                    background-color: rgb(16, 17, 16);
+                  
+                  width: 100%;
+              }
+                  
+              .topnav a {
+                    float: left;
+                    color: #0b69a8;
+                    text-align: center;
+                    padding: 20px 20px;
+                    text-decoration: none;
+                    font-size: 20px;
+                  }
+                  
+              .topnav a:hover {
+                background-color: rgb(58, 29, 56);
+                    color: rgb(211, 89, 156);
+                  }
+                  
+              .topnav a.active {
+                background-color: #ac609a;
+              }
+              <!--
+              body {
+       background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+              }
+            -->
+            body { 
+        background: url('bgimg4.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      
+      .container{
+      padding: 25px;   
+      .achive img:hover{
+        background-color: rgb(58, 29, 56);
+                    color: rgb(211, 89, 156);
+      }
+        
+            </style>
+      </head>
+      <body>
+       
+        <div class="topnav" style="background-attachment: fixed;" opacity : 1>
+                
+
+           
+            <a href="index.html">About</a>
+            <a href="coding.html">Coding Skills</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a class="active" href="#home">Achivements</a>
+           
+            <a href="contact.html">Contact</a>
+            <a href="chat.html">Chat Area</a>
+            <a href="rating.php">Rating</a>
+           
+
+</div>
+
+
+
+</br>
+</br>
+</br>
+<h1 style="text-align: center; color: #dd5ecc;">ACHIVEMENTS</h1>
+
+   
+<div class="row">
+    <div class="column">
+            <div class="image">
+               
+              <img class="image__img" src="100M.jpg" alt ="1" height="490px">
+                <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Athletics</div>
+                    <p class="image__description">
+                    100M Running
+                    </p>
+                </div>
+            </div>
+       
+    </div>
+    <div class="column">
+        <div class="image">
+           
+          <img class="image__img" src="⁬HIGH JUMP.jpg" alt ="1" height="490px">
+            <div class="image__overlay image__overlay--primary">
+                <div class="image__title">Athletics</div>
+                <p class="image__description">
+               HIGH JUMP
+                </p>
+            </div>
+        </div>
+   
+    </div>
+    <div class="column">
+        <div class="image">
+           
+          <img class="image__img" src="HIGH JUMP2.jpg" alt ="1" height="490px">
+            <div class="image__overlay image__overlay--primary">
+                <div class="image__title">Athletics</div>
+                <p class="image__description">
+              HIGH JUMP
+                </p>
+            </div>
+        </div>
+   
+    </div>
+</div>
+
+
+    <br/>
+    <div class="row">
+      <div class="column">
+              <div class="image">
+                 
+                <img class="image__img" src="200M.jpg" alt ="1" height="490px">
+                  <div class="image__overlay image__overlay--primary">
+                      <div class="image__title">Athletics</div>
+                      <p class="image__description">
+                      200M Running
+                      </p>
+                  </div>
+              </div>
+         
+      </div>
+      <div class="column">
+        <div class="image">
+           
+          <img class="image__img" src="RELAY1.jpg" alt ="1" height="490px">
+            <div class="image__overlay image__overlay--primary">
+                <div class="image__title">Athletics</div>
+                <p class="image__description">
+                  Relay Race
+                </p>
+            </div>
+        </div>
+   
+    </div>
+      <div class="column">
+          <div class="image">
+             
+            <img class="image__img" src="RELAY2.jpg" alt ="1" height="490px">
+              <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">Athletics</div>
+                  <p class="image__description">
+                    Relay Race
+                  </p>
+              </div>
+          </div>
+     
+      </div>
+      <br/>
+      <div class="row">
+        <div class="column">
+                <div class="image">
+                   
+                  <img class="image__img" src="DANCE.jpg" alt ="1" height="490px">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">DANCE</div>
+                        <p class="image__description">
+                      Annual competition 
+                        </p>
+                    </div>
+                </div>
+           
+        </div>
+        <div class="column">
+          <div class="image">
+             
+            <img class="image__img" src="DANCE2.jpg" alt ="1" height="490px">
+              <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">DANCE</div>
+                  <p class="image__description">
+                    Annual competition 
+                  </p>
+              </div>
+          </div>
+     
+      </div>
+        <div class="column">
+            <div class="image">
+               
+              <img class="image__img" src="KABADDI.jpg" alt ="1" height="490px">
+                <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">KABADDI</div>
+                    <p class="image__description">
+                    State competition
+                    </p>
+                </div>
+            </div>
+       
+        </div>
+        <br/>
+      <div class="row">
+        <div class="column">
+          <div class="image">
+             
+            <img class="image__img" src="SUMMER CAMP.jpg" alt ="1" height="490px">
+              <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">ATHLETICS</div>
+                  <p class="image__description">
+                 Summer Camp
+                  </p>
+              </div>
+          </div>
+     
+      </div>
+        <div class="column">
+                <div class="image">
+                   
+                  <img class="image__img" src="JCI.jpg" alt ="1" height="490px">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">JCI INDIA</div>
+                        <p class="image__description">
+                     Examination 
+                        </p>
+                    </div>
+                </div>
+           
+        </div>
+        
+       
+
+  </div>       
+      
+           
+
+           
+
+
+      </body>
+      </html>
+
+      
+

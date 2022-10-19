@@ -1,0 +1,36 @@
+<html>
+<body>
+<?php
+if($_POST["username"] == NULL || $_POST["email"] == NULL ||$_POST["password"] ==NULL || $_POST["cpassword"] == NULL || $_POST["gender"] == NULL )
+echo "Enter required field. <br>" ;
+if(!empty($_POST["username"]) || !empty($_POST["email"])
+||!empty($_POST["password"]) 
+|| !empty($_POST["cpassword"])
+||!empty($_POST["gender"]) )
+{
+if(strlen($_POST["username"]) >= 11)
+echo "Uername should be of less than 11 characters.<br>";
+if(!filter_var($_POST["email"],FILTER_VALIDATE_EMAIL))
+echo "Invalid email address.<br>";
+if(strlen($_POST["password"]) < 6 || strlen($_POST["password"]) > 10)
+echo "Password should contain 6 to 10 characters.<br>";
+if($_POST["password"] != $_POST["cpassword"])
+echo "Password and Confirm password should be same.<br>";
+if(strlen($_POST["username"]) < 11 &&
+filter_var($_POST["email"],FILTER_VALIDATE_EMAIL) &&
+(strlen($_POST["password"]) > 6) && (strlen($_POST["password"]) < 10)
+&& $_POST["password"] == $_POST["cpassword"])
+  {
+echo "<span style = 'color:black;font-size=20px'><u><b>You are
+registered.</span></b></u><br><br>";
+echo"<b>Your username is : </b>" .$_POST["username"]. "<br>";
+echo"<b>Your email address is : </b>" .$_POST["email"]. "<br>";
+echo"<b>Your password is : </b>" .$_POST["password"]. "<br>";
+echo"<b>Your gender is : </b>" .$_POST["gender"]. "<br>";
+echo"<b>Your achievements : </b>" .$_POST["achievements"]. "<br><br>";
+echo"<a href= 'index.php'>Home</a>";
+  }
+}
+?>
+</body>
+</html>

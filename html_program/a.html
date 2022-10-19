@@ -1,0 +1,37 @@
+<html>
+    <body>
+<?php
+    echo "<!DOCTYPE html>";
+    echo "<html>";
+    echo "<head></head>";
+    echo "<body>";
+    echo "<form action = 'login.php' method = 'post'>";
+    echo "    <h1> User Login</h1>";
+    echo "    <table border = '1'>";
+    echo "        <tr>";
+    echo "            <td>Username:</td>";
+    echo "            <td><input type = 'text' name = 'name'/></td>";
+    echo "        </tr>";
+    echo "        <tr>";
+    echo "            <td>Password:</td>";
+    echo "            <td><input type = 'password' name = 'password'/></td>";
+    echo "";
+    echo "        </tr>";
+    echo "        <tr>";
+    echo "        <td>Remember me:</td>";
+    echo "        <td><input type = 'checkbox' name = 'remember me'/></td>";
+    echo "        </tr> ";
+    echo "        <tr>";
+    echo "            <td colspan = '2'><input type = 'submit' value = 'login!'</td>";
+    echo "        </tr>";
+    echo "    </table>  ";
+    // if($_post['Username'] == NULL || $_post['Password'] == NULL){
+    // echo "You must supply a username and password.";
+    // }
+    echo "</form>";
+    echo "</body>";
+    echo "</html>";
+
+?>
+</body>
+</html>
